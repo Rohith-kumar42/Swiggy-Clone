@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../pages/index.css">
+        <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+        <title>Swiggy</title>
+    </head>
+    <body>
+        <div class="navigation">
+            <div class="nav-content">
+                <img src="../assets/logo.svg" class="logo">
+                <button class="other">
+                    <span class="othercontent">Other</span>
+                    <img src="../assets/chevron-down-arrow.1024x569.png" class="chevron-down-arrow">
+                </button>
+                <button class="coperate">
+                    <img src="../assets/copearate.svg">
+                    <span>Swiggy Coperate</span>
+                </button>
+                <button class="search">
+                    <span class="glyphicon glyphicon-search">
+                        <span>Search </span>
+                    </span>
+                </button>
+                <button class="offer">
+                    <img src="../assets/offer.svg" alt="Default" class="default-image">
+                    <img src="../assets/offerorange.svg" alt="Hover" class="hover-image">
+                    <span class="offercontent">Offer<sup> NEW</sup></span>
+                </button>
+                <button class="help">
+                    <img src="../assets/help.svg" alt="Default" class="helpdefault">
+                    <img src="../assets/helporange.svg" alt="Hover" class="helphover">
+                    <span >Help</span>
+                </button>
+                <button class="user">
+                    <img src="../assets/user.svg" alt="Default" class="userdefault">
+                    <img src="../assets/userorange.svg" alt="Hover" class="userhover">
+                    <span >Sign In</span>
+                </button>
+                <button class="cart">
+                  
+                    <span><span class="cartcontent">0</span>  Cart</span>
+                </button>
+            </div>
+        </div>
+        <div class="dish">
+            <div style="display: flex; align-items: center;"> 
+                <h1 style="margin-right: 10px;">What's on your mind?</h1>
+                <button class="previous">	&larr;</button>
+                <button class="next">	&rarr;</button>  
+            </div>
+            </div>
+             <div class="row">
+                    <div class="col-md-12">
+                            <div class="row acive" >
+                                <div class="borderimage">
+                                    <button><img src="../assets/biriyani.avif"></button>
+                                     <button><img src="../assets/pizza.avif"></button>
+                                    <button><img src="../assets/samosa.avif"></button>
+                                    <button><img src="../assets/shawarma.avif"></button>
+                                    <button><img src="../assets/momos.avif"></button>
+                                    <button><img src="../assets/roll.avif"></button>
+                                    <button><img src="../assets/cake.avif"></button>
+                                </div>
+                            </div>
+                            <div class="row inactive" >
+                                     <button><img src="../assets/biriyani.avif"></button>
+                                    <button><img src="../assets/pizza.avif"></button>
+                                    <button><img src="../assets/samosa.avif"></button>
+                                    <button><img src="../assets/shawarma.avif"></button>
+                                    <button><img src="../assets/momos.avif"></button>
+                                    <button><img src="../assets/roll.avif"></button>
+                            </div>
+                    </div>
+            </div>
+
+</body>
+</html>
+<script>
+    let next = document.getElementsByClassName("next")[0];
+    next.addEventListener("click", function() {
+        let inactiveRow = document.querySelector(".row.inactive");
+        let activeRow = document.querySelector(".row.acive"); // Fix the typo from "active" to "acive"
+        activeRow.style.display = "none";
+        inactiveRow.style.display = "flex";
+        inactiveRow.scrollIntoView({ behavior: "smooth" });
+        inactiveRow.style.transform='translateX(' + (-size * index) + 'px)';
+    });
+    let prev=document.getElementsByClassName("previous")[0];
+    prev.addEventListener("click",function(){
+        let rowActive=document.querySelector(".row.acive");
+        let rowInactive=document.querySelector(".row.inactive");
+        rowActive.style.display="flex";
+        rowInactive.style.display="none";
+        activeRow.scrollIntoView({behavior:"slide"});
+    })
+
+</script>

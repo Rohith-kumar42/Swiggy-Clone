@@ -1,0 +1,252 @@
+body{
+    background-color: #ffffff;
+    font-family: ProximaNova, arial, "Helvetica Neue", sans-serif;
+    width: 95%;
+}
+.navigation{
+    background-color:  #fffffff7; 
+    height: 80px;
+    box-shadow: 0 15px 40px -20px rgba(40,44,63,.15);
+    }
+.logo{
+    margin-left: 89px;
+}
+.nav-content{
+    padding-top: 6PX;
+    margin-left: 100px;
+}
+.other{
+    color:#3d4152;
+    background-color:transparent;
+    border: none;
+    font-size: 14px; 
+    font-weight: bold; 
+    margin-left: 46px; 
+}
+.othercontent{
+    padding-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 2.1px;
+    width: fit-content;
+}
+.other:hover{
+    color: #fc8019;
+}
+.chevron-down-arrow{
+    height: 10px;
+    padding-left: 15px;
+    width: 30px;
+    color:#3d4152;
+}
+.chevron-down-arrow:hover{
+    color: #fc8019;
+}
+.coperate{
+    background-color:transparent;
+    border:none;
+   margin-left: 200px;
+    padding-top: 25px;
+}
+.coperate img{
+    margin-top:-10px;
+}
+.coperate span{
+    padding-left: 10px;
+    font-size: 16px;
+}
+.coperate:hover{
+    color: #fc8019;
+}
+.search{
+    background-color:transparent;
+    border:none;
+    margin-left: 50px;
+    padding-top: 25px;
+}
+.search span :nth-child(1){
+    color:#3d4152;
+    margin-left: -8px;
+    font-size: 16px;
+    font-family: ProximaNova, arial, "Helvetica Neue", sans-serif;
+}
+
+.search:hover span{
+    color: #fc8019;
+}
+.glyphicon{
+ font-size: 16px;
+ font-weight:100;
+ color: #3d4152;
+
+}
+.offer {
+   background-color: transparent;
+    border: none;
+    color: #3d4152;
+  margin-left: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.offer span{
+   margin-left: -9px;
+}
+.hover-image{
+    margin-left: -39px;
+}
+.offer img {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+    
+}
+
+.offer .hover-image {
+    opacity: 0;
+}
+.offer sup{
+    color: #fc8019;
+    font-size: 10px;
+    font-family: ProximaNova, arial, "Helvetica Neue", sans-serif;
+}
+
+.offer:hover {
+   color: #fc8019;
+}
+
+.offer:hover .default-image {
+    opacity: 0;
+}
+
+.offer:hover .hover-image {
+    opacity: 1;
+}
+.help{
+    margin-left: 50px;
+    background-color: transparent;
+    border: none;
+    color: #3d4152;
+    font-size: 16px;
+    cursor: pointer;
+}
+.help span{
+    margin-left: -5px;
+}
+.helphover{
+    margin-left: -38px;
+}
+.help img{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+.help:hover span{
+    color: #fc8019;
+}
+.helphover{
+    opacity: 0;
+}
+.help:hover .helpdefault{
+    opacity: 0;
+}
+.help:hover .helphover{
+    opacity: 1;
+}
+.user{
+    margin-left: 50px;
+    background-color: transparent;
+    border: none;
+    color: #3d4152;
+    font-size: 16px;
+    cursor: pointer;
+}
+.userhover{
+    margin-left: -22.5px;
+}
+.userhover{
+    opacity: 0;
+}
+.user:hover .userdefault{
+    opacity: 0;
+}
+.user:hover .userhover{
+    opacity: 1;
+}
+.user:hover {
+    color: #fc8019;
+}
+.cart{
+    margin-left: 50px;
+    background-color: transparent;
+    border: none;
+    color: #3d4152;
+    font-size: 16px;
+}
+.cartcontent{
+    background-color: transparent;
+    border: 1px solid #3d4152;
+    padding: 05px;
+    padding-bottom: 0px;
+}
+.cart:hover{
+  color: #fc8019;
+}
+.cart:hover .cartcontent{
+    border: 1px solid #fc8019;
+}
+.dish h1{
+    margin-left: 237px;
+    font-size: 24px;
+    color: #02060c;
+    font-weight: bold;
+    opacity: 92%;
+    font-family: gilroy-bold 400;
+}
+.biriyani img{
+    height: 180px;
+    width: 144px;
+    margin-left: 250px;
+}
+.row{
+    margin-left: 108px;
+   overflow-x:hidden;
+   
+}
+.borderimage{
+    border-bottom:1px solid #989898;
+}
+.row img{
+    height: 208px;
+    width: 162px;
+    padding-right: 28px;
+    
+}
+.row button{
+    background-color: transparent;
+    border: none;
+}
+.inactive{
+    display: none;
+}
+.inactive1{
+display: none;
+}
+.previous{
+    background-color: transparent;
+    border-radius: 100%;
+    border: none;
+    background: rgba(2, 6, 12, 0.15);
+    margin-left: 650px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.next{
+    background-color: transparent;
+    border-radius: 100%;
+    border: none;
+    background: rgba(2, 6, 12, 0.15);
+    margin-left: 50px;
+    padding: 10px 15px;
+    font-size: 14px;
+}

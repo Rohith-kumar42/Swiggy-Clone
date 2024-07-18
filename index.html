@@ -54,50 +54,90 @@
                 <button class="previous">	&larr;</button>
                 <button class="next">	&rarr;</button>  
             </div>
-            </div>
-             <div class="row">
-                    <div class="col-md-12">
-                            <div class="row acive" >
-                                <div class="borderimage">
-                                    <button><img src="../assets/biriyani.avif"></button>
-                                     <button><img src="../assets/pizza.avif"></button>
-                                    <button><img src="../assets/samosa.avif"></button>
-                                    <button><img src="../assets/shawarma.avif"></button>
-                                    <button><img src="../assets/momos.avif"></button>
-                                    <button><img src="../assets/roll.avif"></button>
-                                    <button><img src="../assets/cake.avif"></button>
-                                </div>
-                            </div>
-                            <div class="row inactive" >
-                                     <button><img src="../assets/biriyani.avif"></button>
-                                    <button><img src="../assets/pizza.avif"></button>
-                                    <button><img src="../assets/samosa.avif"></button>
-                                    <button><img src="../assets/shawarma.avif"></button>
-                                    <button><img src="../assets/momos.avif"></button>
-                                    <button><img src="../assets/roll.avif"></button>
-                            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row active" >
+                    <div class="borderimage">
+                        <button><img src="../assets/biriyani.avif"></button>
+                        <button><img src="../assets/pizza.avif"></button>
+                        <button><img src="../assets/samosa.avif"></button>
+                        <button><img src="../assets/shawarma.avif"></button>
+                        <button><img src="../assets/momos.avif"></button>
+                        <button><img src="../assets/roll.avif"></button>
                     </div>
+                </div>
+                <div class="row inactive" >
+                    <div class="borderimage">
+                        <button><img src="../assets/burger.avif"></button>
+                        <button><img src="../assets/cake.avif"></button>
+                        <button><img src="../assets/chinesse.avif"></button>
+                        <button><img src="../assets/icecream.avif"></button>
+                        <button><img src="../assets/noodles.avif"></button>
+                        <button><img src="../assets/kebabs.avif"></button>
+                    </div>
+                </div>
+                <div class="row inactive1" >
+                    <div class="borderimage">
+                        <button><img src="../assets/pureveg.avif"></button>
+                        <button><img src="../assets/salad.avif"></button>
+                        <button><img src="../assets/paniyaram.avif"></button>
+                        <button><img src="../assets/southindian.avif"></button>
+                        <button><img src="../assets/paratha.avif"></button>
+                        <button><img src="../assets/pastry.avif"></button>
+                    </div>
+                </div>
             </div>
+        </div>
+
+
+
+
 
 </body>
 </html>
 <script>
+    let clickCount = 0;
     let next = document.getElementsByClassName("next")[0];
     next.addEventListener("click", function() {
+        clickCount++;
         let inactiveRow = document.querySelector(".row.inactive");
-        let activeRow = document.querySelector(".row.acive"); // Fix the typo from "active" to "acive"
-        activeRow.style.display = "none";
-        inactiveRow.style.display = "flex";
-        inactiveRow.scrollIntoView({ behavior: "smooth" });
-        inactiveRow.style.transform='translateX(' + (-size * index) + 'px)';
+        let inactiveRow1 = document.querySelector(".row.inactive1");
+        let activeRow = document.querySelector(".row.active");
+
+        if (clickCount === 1) {
+            activeRow.style.display = "none";
+            inactiveRow.style.display = "flex";
+            inactiveRow.scrollIntoView({ behavior: "smooth" });
+        } else if (clickCount === 2) {
+            inactiveRow.style.display = "none";
+            inactiveRow1.style.display = "flex";
+            inactiveRow1.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+            inactiveRow1.style.transition = "opacity 2.5s ease-in-out";
+            inactiveRow1.style.opacity = 0;
+            setTimeout(() => {
+                inactiveRow1.style.opacity = 1;
+            }, 0);
+        }
     });
-    let prev=document.getElementsByClassName("previous")[0];
-    prev.addEventListener("click",function(){
-        let rowActive=document.querySelector(".row.acive");
-        let rowInactive=document.querySelector(".row.inactive");
-        rowActive.style.display="flex";
-        rowInactive.style.display="none";
-        activeRow.scrollIntoView({behavior:"slide"});
-    })
+
+    let prev = document.getElementsByClassName("previous")[0];
+    prev.addEventListener("click", function() {
+        clickCount--;
+        let rowActive = document.querySelector(".row.active");
+        let rowInactive = document.querySelector(".row.inactive");
+        let inactiveRow1 = document.querySelector(".row.inactive1");
+
+        if (inactiveRow1.style.display === "flex") {
+            inactiveRow1.style.display = "none";
+            rowInactive.style.display = "flex";
+            rowInactive.scrollIntoView({ behavior: "smooth" });
+        } else if (rowInactive.style.display === "flex") {
+            rowInactive.style.display = "none";
+            rowActive.style.display = "flex";
+            rowActive.scrollIntoView({ behavior: "smooth" });
+        }
+    });
+
 
 </script>

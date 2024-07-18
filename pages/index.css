@@ -210,16 +210,15 @@ body{
 .row{
     margin-left: 108px;
    overflow-x:hidden;
-   
 }
 .borderimage{
     border-bottom:1px solid #989898;
+    width: 86%;
 }
 .row img{
     height: 208px;
     width: 162px;
-    padding-right: 28px;
-    
+    padding-right: 28px;  
 }
 .row button{
     background-color: transparent;

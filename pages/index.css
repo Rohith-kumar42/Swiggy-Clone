@@ -267,33 +267,39 @@ display: none;
 .restcard:hover {
     cursor: pointer;
     img{
-        width: 260px;
-        height: 170px;
-        transition: width 0.2s ease-in, height 0.2s ease-in;  
+        width: 265px;
+        height: 175px;
+        transition: width 0.1s ease-in, height 0.1s ease-in;  
     }
     .restcardimagecontent{
         font-size: 22px;
         width: 100%;
+        transition: width 0.1s ease-in, height 0.1s ease-in;  
     }
     .star{
-        height:20px ;
-        width: 20px;
+        height:25px ;
+        width: 25px;
         margin-top: -60px;
+        transition: width 0.1s ease-in, height 0.1s ease-in;  
     }
     .header{
         font-size: 20px;
         width: 100%;
         margin-top: -30px;
+        transition: width 0.1s ease-in, height 0.1s ease-in;  
     }
     .inlinelist{
         margin-top: -52px;
         font-size: 18px;
-    }
+        transition: width 0.1s ease-in, height 0.1s ease-in;  
+        }
     .reststyle{
         overflow-x: visible;
+        transition: width 0.1s ease-in, height 0.1s ease-in;  
     }
     .location{
         margin-top: -30px;
+        transition: width 0.1s ease-in, height 0.1s ease-in;  
     }
 }
 .restcard:hover p{

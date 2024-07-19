@@ -153,32 +153,32 @@
                         </div>
                         </div>
                         <div class="restcard">
-                            <img src="assets/kfc.avif">
+                            <img src="assets/nightlion.avif">
                             <p class="restcardimagecontent">Items at ₹179</p>
                             <div class="restcardcontent">
-                                <p class="restcardcontent header">KFC</p><img class="star" src="assets/star.svg">
+                                <p class="restcardcontent header">Night Lion by Madhampatty Pakashala</p><img class="star" src="assets/star.svg">
                                 <span class="inlinelist">4.2<ul><li>20-25 min</li></ul></span>
-                                <p class="reststyle">Burgers,Fast Food,Rolls & Wraps    </p>
+                                <p class="reststyle">Burgers,Fast Food,Rolls & Wraps</p>
                                 <p class="location">Avanashi Road</p>
                             </div>
                         </div>
                         <div class="restcard">
-                            <img src="assets/burgerking.avif">
-                            <p class="restcardimagecontent">₹350 For Two</p>
+                            <img src="assets/aryabhavan.avif">
+                            <p class="restcardimagecontent"></p>
                             <div class="restcardcontent">
-                                <p class="restcardcontent header">Burger King</p><img class="star" src="assets/star.svg">
-                                <span class="inlinelist">4.2<ul><li>40-45 min</li></ul></span>
-                                <p class="reststyle">Burgers, American</p>
-                                <p class="location">Saravanampatti</p>
+                                <p class="restcardcontent header">Nagarcoil Arya Bhavan</p><img class="star" src="assets/star.svg">
+                                <span class="inlinelist">4.6<ul><li>25-30 min</li></ul></span>
+                                <p class="reststyle">South Indian, Chinesse</p>
+                                <p class="location">Peelamedu</p>
                             </div>
                         </div>
                         <div class="restcard" >
-                            <img src="assets/mcdonald.avif">
-                            <p class="restcardimagecontent">Items at ₹199</p>
+                            <img src="assets/bbq.avif">
+                            <p class="restcardimagecontent">50% OFF UPTO 100</p>
                             <div class="restcardcontent">
-                                <p class="restcardcontent header">McDonald's</p><img class="star" src="assets/star.svg">
-                                <span class="inlinelist">4.4<ul><li>25-30 min</li></ul></span>
-                                <p class="reststyle">Burgers, Beverage, Cafe, Desserts</p>
+                                <p class="restcardcontent header">UBQ by Barbeque Nation</p><img class="star" src="assets/star.svg">
+                                <span class="inlinelist">4.1<ul><li>25-30 min</li></ul></span>
+                                <p class="reststyle">North Indian, Barbecue, Biryani, Kebabs, Mughlai, Desserts</p>
                                 <p class="location">Avanashi Road</p>
                             </div>
                         </div>
@@ -187,14 +187,14 @@
                 <div class="row1 activein1">
                     <div class="restcardcontainer">
                         <div class="restcard" >
-                            <img src="assets/kfc.avif">
-                            <p class="restcardimagecontent">Items at ₹199</p>
+                            <img src="assets/bbq.avif">
+                            <p class="restcardimagecontent">50% OFF UPTO 100</p>
                             <div class="restcardcontent">
-                                <p class="restcardcontent header">McDonald's</p><img class="star" src="assets/star.svg">
-                                <span class="inlinelist">4.4<ul><li>25-30 min</li></ul></span>
-                                <p class="reststyle">Burgers, Beverage, Cafe, Desserts</p>
+                                <p class="restcardcontent header">UBQ by Barbeque Nation</p><img class="star" src="assets/star.svg">
+                                <span class="inlinelist">4.1<ul><li>25-30 min</li></ul></span>
+                                <p class="reststyle">North Indian, Barbecue, Biryani, Kebabs, Mughlai, Desserts</p>
                                 <p class="location">Avanashi Road</p>
-                        </div>
+                            </div>
                         </div>
                         </div>
                         <div class="restcard">
@@ -229,8 +229,9 @@
                         </div>
                     </div>
                 </div>
-        </div>
-       
+                <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+            </div>
+       <br>
 
 
 
@@ -285,31 +286,38 @@
     let clickCount1=0;
     let prev1=document.getElementsByClassName("previous1")[0];
     let next1=document.getElementsByClassName("next1")[0];
+ 
     next1.addEventListener("click",function(){
         clickCount1++;
         if(clickCount1==1){
         let rowactive=document.querySelector(".row1.active1");
         let rowinactive=document.querySelector(".row1.activein");
         let prev1=document.getElementsByClassName("previous1")[0];
+        let slider = document.querySelector("input[type='range']");
         rowactive.style.display="none";
         rowinactive.style.display='flex';
         prev1.style.opacity = "1";
+        slider.value = 33; // Change the value of the range slider to 50
         }
         if(clickCount1==2){
         let rowactive=document.querySelector(".row1.active1");
         let rowinactive=document.querySelector(".row1.activein");
         let rowinactive1=document.querySelector(".row1.activein1");
+        let slider = document.querySelector("input[type='range']");
         rowactive.style.display="none";
         rowinactive.style.display='none';
         rowinactive1.style.display="flex";   
         rowinactive1.style.marginLeft = "237px"; 
         rowinactive1.style.overflowX = "hidden";
+        slider.value=66;
             }
         });
         prev1.addEventListener("click", function() {
             if (clickCount1 == 2) {
                  let rowinactive1 = document.querySelector(".row1.activein1");
                 let rowinactive = document.querySelector(".row1.activein");
+                let slider = document.querySelector("input[type='range']");
+                slider.value=33;
                 rowinactive1.style.display = "none";
                 rowinactive.style.display = 'flex';
                 clickCount1--;
@@ -318,8 +326,11 @@
                 let rowinactive = document.querySelector(".row1.activein");
                 let rowactive = document.querySelector(".row1.active1");
                 let prev1=document.getElementsByClassName("previous1")[0];
+                let slider = document.querySelector("input[type='range']");
                 rowinactive.style.display = "none";
                 rowactive.style.display = 'flex';
+                slider.style.display="block ";
+                slider.value=0;
                 clickCount1--;
                 prev1.style.opacity = "0.6";
             }

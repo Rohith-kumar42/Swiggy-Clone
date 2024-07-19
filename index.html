@@ -230,7 +230,7 @@
                     </div>
                 </div>
         </div>
-
+       
 
 
 
@@ -248,12 +248,14 @@
         if (clickCount === 1) {
             activeRow.style.display = "none";
             inactiveRow.style.display = "flex";
+            prev.style.opacity = "1";
             if (window.scrollY === 0) {
                 window.scrollTo({ top: 0, behavior: "smooth" });
             }
         } else if (clickCount === 2) {
             inactiveRow.style.display = "none";
             inactiveRow1.style.display = "flex";
+            prev.style.opacity = "1";
             if (window.scrollY === 0) {
                 window.scrollTo({ top: 0, behavior: "smooth" });
             }
@@ -265,7 +267,6 @@
         let rowActive = document.querySelector(".row.active");
         let rowInactive = document.querySelector(".row.inactive");
         let inactiveRow1 = document.querySelector(".row.inactive1");
-
         if (inactiveRow1.style.display === "flex") {
             inactiveRow1.style.display = "none";
             rowInactive.style.display = "flex";
@@ -278,6 +279,7 @@
             if (window.scrollY === 0) {
                 window.scrollTo({ top: 0, behavior: "smooth" });
             }
+            prev.style.opacity = "0.6";
         }
     });
     let clickCount1=0;
@@ -288,8 +290,10 @@
         if(clickCount1==1){
         let rowactive=document.querySelector(".row1.active1");
         let rowinactive=document.querySelector(".row1.activein");
+        let prev1=document.getElementsByClassName("previous1")[0];
         rowactive.style.display="none";
         rowinactive.style.display='flex';
+        prev1.style.opacity = "1";
         }
         if(clickCount1==2){
         let rowactive=document.querySelector(".row1.active1");
@@ -313,9 +317,11 @@
             else if (clickCount1 == 1) {
                 let rowinactive = document.querySelector(".row1.activein");
                 let rowactive = document.querySelector(".row1.active1");
+                let prev1=document.getElementsByClassName("previous1")[0];
                 rowinactive.style.display = "none";
                 rowactive.style.display = 'flex';
                 clickCount1--;
+                prev1.style.opacity = "0.6";
             }
 });
     

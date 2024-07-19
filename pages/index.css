@@ -10,9 +10,13 @@ body{
     width: 95%;
 }
 .navigation{
-    background-color:  #fffffff7; 
+    background-color:  #ffffffff; 
     height: 80px;
     box-shadow: 0 15px 40px -20px rgba(40,44,63,.15);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     }
 .logo{
     margin-left: 89px;
@@ -199,6 +203,9 @@ body{
 }
 .cart:hover .cartcontent{
     border: 1px solid #fc8019;
+}
+.dish{
+    margin-top: 100px;
 }
 .dish h1{
     margin-left: 237px;

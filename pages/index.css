@@ -245,13 +245,14 @@ display: none;
     padding: 10px 15px;
     font-size: 14px;
     font-weight: bolder;
+    opacity: 60%;
 }
 .next{
     background-color: transparent;
     border-radius: 100%;
     border: none;
     background: rgba(2, 6, 12, 0.15);
-    margin-left: 50px;
+    margin-left: 20px;
     padding: 10px 15px;
     font-size: 14px;
 }
@@ -259,7 +260,7 @@ display: none;
 .topres{
     margin-left: 237px;
     width: 1080px;
-    overflow-x: hidden  ;
+    overflow-x: hidden;
 }
 .topresheader{
     font-size: 24px;
@@ -313,7 +314,8 @@ display: none;
     }
     .location{
         margin-top: -30px;
-        transition: width 0.1s ease-in, height 0.1s ease-in;  
+        transition: width 0.1s ease-in, height 0.1s ease-in; 
+        width: 100%; 
     }
     .restcardimagecontent{
         height: 40px;
@@ -397,4 +399,35 @@ display: none;
     opacity: 62%;
     font-weight: 800;
 }
-
+.previous1{
+    background-color: transparent;
+    border-radius: 100%;
+    border: none;
+    background: rgba(2, 6, 12, 0.15);
+    margin-left: 450px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bolder;
+    opacity: 60%;
+}
+.next1{
+    background-color: transparent;
+    border-radius: 100%;
+    border: none;
+    background: rgba(2, 6, 12, 0.15);
+    margin-left: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+.row1{
+    overflow-x: hidden;
+}
+.activein{
+    display: none;
+}
+.activein1{
+display: none;
+overflow: hidden;
+margin-left: 205px;
+width: 1080px;
+}

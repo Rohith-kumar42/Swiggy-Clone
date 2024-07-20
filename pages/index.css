@@ -319,6 +319,9 @@ body{
     .restcardimagecontent{
         height: 40px;
     }
+    .slider{
+        margin-top: -100px;;
+    }
 }
 .restcard:hover p{
     width: 50px;
@@ -433,7 +436,11 @@ body{
 .activein1{
     display: none;
     overflow: hidden;
-    margin-left: 205px;
+    width: 1080px;
+}
+.activein2{
+    display: none;
+    overflow: hidden;
     width: 1080px;
 }
 input[type='range']{

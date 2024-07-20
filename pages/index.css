@@ -319,8 +319,8 @@ body{
     .restcardimagecontent{
         height: 40px;
     }
-    .slider{
-        margin-top: -100px;;
+   .slider{
+        margin-top: 510px;
     }
 }
 .restcard:hover p{
@@ -332,7 +332,7 @@ body{
     position: relative;
     width: 273px;
 }
-.restcard img{
+.image{
     width: 273px;
     height: 182px;
     border-radius: 7%;
@@ -444,7 +444,7 @@ body{
     width: 1080px;
 }
 input[type='range']{
-    margin-left: 720px;
+    margin-left: 500px;
     margin-top: 50px;
     width: 120px;
 }
@@ -476,4 +476,79 @@ input[type='range']{
     height: 7px;
     background: #fc8019;
     cursor: pointer;
+}
+
+.restcard:hover{
+    .image1{
+            width: 255px;
+            height: 161px;
+            border-bottom-left-radius:0%;
+            border-bottom-right-radius:0% ;
+            transition: width 0.1s ease-in, height 0.1s ease-in;  
+        
+    }
+    .restcardimagecontent1{
+        font-size: 19px;
+        width: 253px;
+        transition: width 0.1s ease-in, height 0.1s ease-in;  
+    }
+    .restcardimagecontent1{
+        height: 33px;
+        margin-top: -33px;
+       
+        width: 254px;
+    }
+    .header1{
+        font-size: 19px;
+        width: 100%;
+        margin-top: 2px;
+        transition: width 0.1s ease-in, height 0.1s ease-in;  
+    }
+    .star{
+        height:20px ;
+        width: 20px;
+        margin-top: -60px;
+        transition: width 0.1s ease-in, height 0.1s ease-in;  
+    }
+    .inlinelist{
+        font-size: 19px;
+    }
+}
+.restcardimagecontent1{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    text-transform: uppercase;
+    height: 35px;
+    padding-top: 10px;
+    width: 253px;
+    background:  linear-gradient(rgba(27, 30, 36, 0) 0%, rgb(27, 30, 36) 84.21%);
+    box-sizing: border-box;
+    border-radius: 15%;
+    border-bottom-right-radius:0% ;
+    border-bottom-left-radius:0% ;
+    margin-top: -32px;
+}
+.restcardcontent .header1{
+    font-size: 20px;
+    font-family: gilroy-bold 400;
+    font-weight: 400;
+    margin-top: 10px;
+    color:#02060c;
+}
+.header1{
+    width: 100%;
+    letter-spacing: -0.3px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.image1{
+    width: 253px;
+    height: 169px;
+    border-radius: 7%;
+    object-fit: cover;
 }

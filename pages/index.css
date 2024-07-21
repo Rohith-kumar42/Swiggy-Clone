@@ -578,3 +578,49 @@ input[type='range']{
     width: 25px;
     padding-left: 5px;
 }
+.cities, .cusaines, .explore{
+    margin-left: 233px;
+}
+.cityheader, .cusianesheader, .exploreheader{
+    font-size: 24px;
+    letter-spacing: -0.4px;
+    color: #02060c;
+    font-weight: 600;
+}
+.citybuttons, .cusainesbuttons {
+    display: flex;
+    margin-bottom: 30px;
+}
+.citybutton, .cusianebutton{
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid rgba(2, 6, 12, 0.15);
+    color: rgba(2, 6, 12, 0.75);
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 35px;
+    width: 260px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    text-wrap:nowrap;
+}
+.explorebuttons{
+    display: flex;
+}
+.explorebutton{
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid rgba(2, 6, 12, 0.15);
+    color: rgba(2, 6, 12, 0.75);
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 35px;
+    width: 560px;
+    
+}

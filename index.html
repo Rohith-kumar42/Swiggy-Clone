@@ -513,9 +513,80 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                   
-                   
+                </div>  
+      </div>
+      <div class="cities">
+        <h1 class="cityheader">Best PLace to Eat Across Cities</h1><br>
+        <div class="citybuttons">
+           <a href="../index.html"> <button class="citybutton">Best Restaurants in Bangalore</button></a>
+           <a href="../index.html"> <button class="citybutton">Best Restaurants in Pune</button></a>
+           <a href="../index.html"> <button class="citybutton">Best Restaurants in Mumbai</button></a>
+           <a href="../index.html"> <button class="citybutton">Best Restaurants in Delhi</button></a>
+        </div>
+        <div class="citybuttons">
+            <a href="../index.html"> <button class="citybutton">Best Restaurants in Chennai</button></a>
+            <a href="../index.html"> <button class="citybutton">Best Restaurants in Jaipur</button></a>
+            <a href="../index.html"> <button class="citybutton">Best Restaurants in Hyderbad</button></a>
+            <a href="../index.html"> <button class="citybutton">Best Restaurants in Kolkata</button></a>
+         </div>
+         <div class="citybuttons">
+            <a href="../index.html"> <button class="citybutton">Best Restaurants in Chattisgarh</button></a>
+            <a href="../index.html"> <button class="citybutton">Best Restaurants in Raipur</button></a>
+            <a href="../index.html"> <button class="citybutton">Best Restaurants in Bhopal</button></a>
+            <a href="../index.html"> <button class="citybutton">Best Restaurants in Indore</button></a>
+         </div>
+         <div class="citybuttons">
+            <a href="../index.html"> <button class="citybutton">Best Restaurants in Patna</button></a>
+            <a href="../index.html"> <button class="citybutton">Best Restaurants in Ranchi</button></a>
+            <a href="../index.html"> <button class="citybutton">Best Restaurants in Lucknow</button></a>
+            <a href="../index.html"> <button class="citybutton showmore">Show More <img src="assets/chevron-down-arrow.svg" style="width: 20px;"></img></button></a>
+         </div>
+         <div class="citybuttons" >
+            <a href="../index.html"> <button class="citybutton">Best Restaurants in Shimla</button></a>
+            <a href="../index.html"> <button class="citybutton">Best Restaurants in Chandigarh</button></a>
+            <a href="../index.html"> <button class="citybutton">Best Restaurants in Jaipur</button></a>
+            <a href="../index.html"> <button class="citybutton">Best Restaurants in Gandhinagar</button></a>
+         </div>
+      </div>
+      <div class="cusaines">
+        <h1 class="cusianesheader">Best Cuisines Near Me</h1><br>
+        <div class="cusainesbuttons">
+           <a href="../index.html"> <button class="cusianebutton">South Indian Restaurants Near Me</button></a>
+           <a href="../index.html"> <button class="cusianebutton">Chinese Restaurants Near Me</button></a>
+           <a href="../index.html"> <button class="cusianebutton">Italian Restaurants Near Me</button></a>
+           <a href="../index.html"> <button class="cusianebutton">Mexican Restaurants Near Me</button></a>
+        </div>
+        <div class="cusainesbuttons">
+            <a href="../index.html"> <button class="cusianebutton">Indian Restaurants Near Me</button></a>
+            <a href="../index.html"> <button class="cusianebutton">Japanese Restaurants Near Me</button></a>
+            <a href="../index.html"> <button class="cusianebutton">Korean Restaurants Near Me</button></a>
+            <a href="../index.html"> <button class="cusianebutton">Thai Restaurants Near Me</button></a>
+         </div>
+         <div class="cusainesbuttons">
+            <a href="../index.html"> <button class="cusianebutton">Vegan Restaurants Near Me</button></a>
+            <a href="../index.html"> <button class="cusianebutton">Vegetarian Restaurants Near Me</button></a>
+            <a href="../index.html"> <button class="cusianebutton">Desserts Restaurants Near Me</button></a>
+            <a href="../index.html"> <button class="cusianebutton">Beverages Restaurants Near Me</button></a>
+         </div>
+         <div class="cusainesbuttons">
+            <a href="../index.html"> <button class="cusianebutton">Fast Food Restaurants Near Me</button></a>
+            <a href="../index.html"> <button class="cusianebutton">Street Food Restaurants Near Me</button></a>
+            <a href="../index.html"> <button class="cusianebutton">Cafe Restaurants Near Me</button></a>
+            <a href="../index.html"> <button class="cusianebutton showmore">Show More <img src="assets/chevron-down-arrow.svg" style="width: 20px;"></img></button></a>
+         </div>
+         <div class="cusainesbuttons" style="display: none;">
+            <a href="../index.html"> <button class="cusianebutton">Sea Food Restaurants Near Me</button></a>
+            <a href="../index.html"> <button class="cusianebutton">Barbecue Restaurants Near Me</button></a>
+            <a href="../index.html"> <button class="cusianebutton">Sushi Restaurants Near Me</button></a>
+            <a href="../index.html"> <button class="cusianebutton">Tacos Restaurants Near Me</button></a>
+         </div>
+      </div>
+      <div class="explore">
+        <h1 class="exploreheader">Explore Every Restaurants Near Me</h1>
+        <div class="explorebuttons">
+            <button class="explorebutton">Explore Restaurants Near Me</button>
+            <button class="explorebutton">Explore Top Rated Restaurants Near Me</button>
+        </div>
       </div>
 
 
@@ -672,5 +743,11 @@ document.querySelectorAll(".navbutton").forEach(nav => {
 
     });
 });
+document.querySelector(".showmore").addEventListener("click", function() {
+    let nextCityButtons = document.querySelector(".citybuttons");
+    if (nextCityButtons) {
+        nextCityButtons.style.display = "block";
+    }
+})
     
 </script>
